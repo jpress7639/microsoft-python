@@ -45,5 +45,10 @@
 # git add <filename>
 # git commit -m "Your commit message"
 
+# GIT VS GIT HUB
+# Git is a distributed version control system 
+# allows you to experiment freely with branches 
+
+# GitHub is a web based platform built in front of git 
 
 
