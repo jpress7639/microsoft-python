@@ -20,5 +20,3 @@
 # a low R Squared Score could mean that the model is underfit 
 
 
-
-
