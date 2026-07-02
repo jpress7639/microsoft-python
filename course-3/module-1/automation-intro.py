@@ -50,7 +50,7 @@
 
 # Challenges 
 # Automation is used responsibly, how workers can transform into new roles 
-# It is important to protext people's privacy and keep information safe 
+# It is important to protect people's privacy and keep information safe 
 
 # AUTOMATION TOOLS OVERVIEW 
 
