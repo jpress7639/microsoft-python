@@ -36,6 +36,9 @@
 # Example, to find all customers whose names start with 'J':
 # SELECT customer_id, name FROM Customer WHERE name LIKE 'J%';
 
+# if a product had the word Keyboard somewhere in its name, you could use:
+# SELECT product_id, name FROM Product WHERE name LIKE '%Keyboard%';
+
 # Use a wildcard for all cusomters who have the letter 'a' as the second letter in their name:
 # SELECT customer_id, name FROM Customer WHERE name LIKE '_a%';
 

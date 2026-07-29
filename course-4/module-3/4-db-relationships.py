@@ -141,3 +141,26 @@ class Course(db.Model):
 # They map Python classes to database tables and Python objects to rows in those tables.
 # This mapping allows developers to perform CRUD (Create, Read, Update, Delete) operations 
 # on the database using Python code, without needing to write raw SQL queries.
+
+# Social Media App
+# Users and their friendships
+# Which approach is most efficient for representing "friendship" relationships between users in a social media application?
+# A many-to-many relationship is the most efficient approach for representing "friendship" relationships between users in a social media application. 
+# Each user can have multiple friends, and each friend can also have multiple friends, creating a complex web of connections. 
+# A many-to-many relationship allows for efficient querying and management of these relationships, enabling features like mutual friends, friend suggestions, and social graph analysis.
+
+# Create a separate table called "friendships" to establish the many-to-many relationship between users
+friendships = db.Table('friendships',
+    db.Column('user_id', db.Integer, db.ForeignKey('user.id'), primary_key=True),
+    db.Column('friend_id', db.Integer, db.ForeignKey('user.id'), primary_key=True)
+)
+
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100))
+    friends = db.relationship('User',
+                              secondary=friendships,
+                              primaryjoin=id==friendships.c.user_id,
+                              secondaryjoin=id==friendships.c.friend_id,
+                              backref=db.backref('friend_of', lazy='dynamic'),
+                              lazy='dynamic')
