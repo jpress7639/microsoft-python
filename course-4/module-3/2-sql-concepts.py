@@ -118,4 +118,3 @@ class Book(db.Model):
 # SQL: SELECT * FROM Book WHERE title LIKE '%Python%';
 # ORM: Book.query.filter(Book.title.like('%Python%')).all()
 
-
