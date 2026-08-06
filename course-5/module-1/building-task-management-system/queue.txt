@@ -1,0 +1,3 @@
+Practice Guitar,2026-08-05,True,Practice chord strummings, review chord patterns
+Do your object writing,2026-08-05,False,10 min writing exercise
+Start writing song for Saturday,2026-08-05,False,Start writing the song due, use the object writing as inspiration
