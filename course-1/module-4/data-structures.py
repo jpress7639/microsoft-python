@@ -11,7 +11,8 @@ print(my_list[0])
 
 # Accessing ^
 # Extracting subsets with slicing (the end index is not inclusive) [1:3], would only get 1 + 2
-
+# List is different than an array due to its ability to store heterogeneous data types 
+# and its dynamic resizing capabilities.
 
 # extending your list to add multiple items extend() versus append() - only one
 
